@@ -31,7 +31,7 @@ iOS communication, unimportant which mode is the iDevice in!
 
 ## HOW TO USE
 - Include ioshdev.h in your C file.<br>
-Looks so: `#include "ioshdev"`
+Looks so: `#include "ioshdev.h"`
 
 - Compile your project.
 
