@@ -1,6 +1,6 @@
 /**
  * OpeniDev Project - ioshdev ioshdev.h
- * ioshdev - Library for communication with iPhones.
+ * ioshdev - Header file for easier communication with iPhones in all modes.
  * Copyright (C) 2014  Louis Kremer
  * Special Credits: Nikias Bassen(pimskeks) for libusb-1.0
  *
