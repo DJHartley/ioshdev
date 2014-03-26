@@ -42,4 +42,4 @@ Looks so:
 
 ## CREDITS
 + [@cal0x](http://twitter.com/cal0x) (ioshdev)
-+ [@pimskeks](https://twitter.com/pimskeks) (libusb)
++ [libusb](http://www.libusb.org) (libusb)
