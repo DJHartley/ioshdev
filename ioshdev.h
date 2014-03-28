@@ -2,7 +2,7 @@
  * OpeniDev Project - ioshdev ioshdev.h
  * ioshdev - Header file for easier communication with iPhones in all modes.
  * Copyright (C) 2014  Louis Kremer
- * Special Credits: Nikias Bassen(pimskeks) for libusb-1.0
+ * Special Credits: libusb.org for libusb-1.0
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
