@@ -2,7 +2,7 @@
  * OpeniDev Project - ioshdev ioshdev.h
  * ioshdev - Header file for easier communication with iPhones in all modes.
  * Copyright (C) 2014  Louis Kremer
- * Special Credits: http://www.libusb.org
+ * Special Credits: Nikias Bassen(pimskeks) for libusb-1.0
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -55,6 +55,7 @@ extern "C" {
     int rec_reboot();
     int set_autoboot_true();
     int normal_udid();
+    int boot_logo_conf();
     void getdata(struct am_device_notification_callback_info *info);
     void sendata(*device);
 
@@ -119,6 +120,16 @@ extern "C" {
     int normal_udid() {
         AMDeviceNotificationSubscribe(&getdata, NULL, NULL, NULL, &notify);
         CFRunLoopRun();
+    }
+    
+    int boot_logo_conf() {
+        char* background[3];
+        background[1] = "setpicture 0";
+        background[2] = "bgcolor 0 0 0";
+        background[3] = "bgcolor 192 192 192";
+        rec_send_cmd(&background[1]);
+        rec_send_cmd(&background[2]);
+        rec_send_cmd(&background[3]);
     }
     
 #ifdef __cplusplus
